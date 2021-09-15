@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8222556595559463665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3130360986044469087}
+  - component: {fileID: 3349598582163785573}
+  m_Layer: 0
+  m_Name: DodgeSkill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3130360986044469087
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8222556595559463665}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.3829784, y: 2.6423557, z: -8.22637}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3349598582163785573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8222556595559463665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19e991e1068b9e4b92ae7e0b9cd2cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackName: Dodge
+  attackDescription: Does no damage. Chaowe enters a dodge mode, where when attacked
+    they are given a quicktime event. For every successful dodge the opponent gains
+    frustration.
+  attackDamage: 0
+  healAmount: 0
+  attackCost: 0
+  attackType: Skill
+  attackEffect: 0
+  attackEffectType: 
+  defenseIncrease: 0
+  skillEffectTurns: 3
+  critHitChance: 0
+  critHitDmg: 0
+  skillType: 7

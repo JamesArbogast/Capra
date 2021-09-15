@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1466493736651940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4241586901783074}
+  - component: {fileID: 114257905368712750}
+  m_Layer: 0
+  m_Name: CABSpearItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4241586901783074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466493736651940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 563.26697, y: 460.15964, z: -18.375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114257905368712750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466493736651940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b2c398fe215841d187bc028e2846f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: CAB Spear
+  itemImage: {fileID: 21300000, guid: 7cc0049038dcc4936bf26ed6a7e0d730, type: 3}
+  itemDescription: The standard spear used by CAB Guards. Increases attack, can be
+    thrown.
+  itemID: 2
+  itemType: 2
+  primaryWeaponType: 0
+  armorTypes: 0
+  consumables: 0
+  statusEffect: 0
+  speedStat: 2
+  physAttackStat: 3
+  physDefenseStat: 0
+  dodgeStat: 1
+  zuliumAttackStat: 0
+  zuliumDefenseStat: 0
+  zuliumHealStat: 0
+  resistStat: 1
+  energyStat: 2
+  luckStat: 3
+  intelligenceStat: 1

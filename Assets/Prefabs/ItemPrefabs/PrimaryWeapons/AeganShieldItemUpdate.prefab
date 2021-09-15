@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1550068115841530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4939936994035714}
+  - component: {fileID: 114693689383037172}
+  m_Layer: 0
+  m_Name: AeganShieldItemUpdate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4939936994035714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550068115841530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 563.26697, y: 460.15964, z: -18.375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114693689383037172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550068115841530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6949a517b7a92437db409ee66020e19c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Aegan Shield
+  itemImage: {fileID: 21300000, guid: 15d9efaa20761498e853aee47546d08c, type: 3}
+  itemDescription: Greatly increases users defense, but can also be used to attack.
+    Increases Zulium intake.
+  itemID: 1
+  itemType: 2
+  primaryWeaponType: 1
+  armorTypes: 0
+  consumables: 0
+  statusEffect: 1
+  speedStat: -1
+  physAttackStat: 2
+  physDefenseStat: 3
+  dodgeStat: -2
+  zuliumAttackStat: 1
+  zuliumDefenseStat: 4
+  zuliumHealStat: 0
+  resistStat: 1
+  energyStat: -1
+  luckStat: 1
+  intelligenceStat: 0

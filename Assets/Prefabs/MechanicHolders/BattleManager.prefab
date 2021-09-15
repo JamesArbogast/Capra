@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1754766587444386022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1754766587444386040}
+  - component: {fileID: 1754766587444386041}
+  m_Layer: 0
+  m_Name: BattleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1754766587444386040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754766587444386022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 315.333, y: 225.76257, z: -3.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1754766587444386041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754766587444386022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c10276b0c6d4496b24c1c5e5c68eef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionButtonsCreated: 0
+  performStates: 0
+  TurnQueue: []
+  PerformList: []
+  HeroesInBattle: []
+  HeroesWaiting: []
+  EnemiesInBattle: []
+  EnemyButtonsInBattle: []
+  HeroButtonsInBattle: []
+  EveryoneInBattle: []
+  heroInput: 0
+  HeroesToManage: []
+  heroChoice:
+    attacker: 
+    type: 
+    attackersGameObject: {fileID: 0}
+    attackersTarget: {fileID: 0}
+    chooseAttack: {fileID: 0}
+  enemyButton: {fileID: 1489671193236756, guid: 44e800e7034a843b286680450ecc90c3,
+    type: 3}
+  heroButton: {fileID: 1787877667277534, guid: 9a5b16e81cc254d408c7d30c076ccf44, type: 3}
+  enemySelectSpacer: {fileID: 0}
+  heroSelectSpacer: {fileID: 0}
+  actionPanel: {fileID: 0}
+  enemySelectPanel: {fileID: 0}
+  heroSelectPanel: {fileID: 0}
+  zuliumPanel: {fileID: 0}
+  meleePanel: {fileID: 0}
+  skillPanel: {fileID: 0}
+  healPanel: {fileID: 0}
+  battlePausePanel: {fileID: 1366331269882247989, guid: 770fa75da09814acfa4030742dc0a7e8,
+    type: 3}
+  switchHeroPanel: {fileID: 0}
+  winLoseScreen: {fileID: 0}
+  actionSpacer: {fileID: 0}
+  zuliumSpacer: {fileID: 0}
+  meleeSpacer: {fileID: 0}
+  skillSpacer: {fileID: 0}
+  healSpacer: {fileID: 0}
+  switchSpacer: {fileID: 0}
+  actionButton: {fileID: 1176484747421886, guid: 10d1b7356209c4b849db57fc965f98e3,
+    type: 3}
+  zuliumButton: {fileID: 1113679664945226, guid: 3c84add76608a434a998c2b366001bb6,
+    type: 3}
+  meleeButton: {fileID: 1220371003962116, guid: 3cf50f82178834e1a80f9168990f46df,
+    type: 3}
+  skillButton: {fileID: 1220371003962116, guid: d5c802ea8520c4c42af20155964ded6a,
+    type: 3}
+  healButton: {fileID: 1220371003962116, guid: fb6210854c0b44359979773950c78c32, type: 3}
+  heroInactiveButton: {fileID: 1749959215803202, guid: b410652ecd77842afb84c484579191b6,
+    type: 3}
+  heroActiveButton: {fileID: 1121521076225360, guid: 835a638bbcdd24f169f99be955fc9129,
+    type: 3}
+  heroGUIOn: 0
+  gamePaused: 0
+  turnQueueCount: 0
+  turnQueueFull: 0
+  turnQueueEmpty: 0
+  turnQueueFilling: 0
+  criticalHitSuccess: 0
+  winLoseScreenAnim: {fileID: 0}

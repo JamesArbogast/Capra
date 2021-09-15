@@ -1,0 +1,369 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1089348319604568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4358381336659308}
+  - component: {fileID: 212531639803333494}
+  m_Layer: 0
+  m_Name: Selector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4358381336659308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089348319604568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.008, y: 0.534, z: 0}
+  m_LocalScale: {x: 0.4857424, y: 0.5538728, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4698305777354596}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &212531639803333494
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089348319604568}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ae2d1015e15df4abab1d825856a6a60c, type: 3}
+  m_Color: {r: 1, g: 0.62352943, b: 0.9688196, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.2, y: 0.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1376198335706632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4698305777354596}
+  - component: {fileID: 212153283334985358}
+  - component: {fileID: 61143582277592386}
+  - component: {fileID: 114697324205571784}
+  - component: {fileID: 95357634682650080}
+  - component: {fileID: -221795321937257542}
+  m_Layer: 0
+  m_Name: Tzey
+  m_TagString: Hero
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4698305777354596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376198335706632}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.2370214, y: 1.8876443, z: -0.01995802}
+  m_LocalScale: {x: 1.1747898, y: 1.3099637, z: 1}
+  m_Children:
+  - {fileID: 4358381336659308}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &212153283334985358
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376198335706632}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f55e279e7fca04573a38cb81b6b1e831, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 7a7c2502c80fce548b38b940ccd74462, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!61 &61143582277592386
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376198335706632}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.48, y: 0.48}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.0001, y: 0.0001}
+  m_EdgeRadius: 0
+--- !u!114 &114697324205571784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376198335706632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 805a8a8949b174b23a3eb7eb58483321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleStateMachine: {fileID: 0}
+  hero:
+    isHero: 0
+    isEnemy: 0
+    theName: Tzey
+    currentLevel: 1
+    baseHP: 150
+    currentHP: 150
+    baseZP: 300
+    currentZP: 300
+    baseEnergy: 0
+    currentEnergy: 0
+    speed: 1.002
+    physAttack: 10
+    physDefense: 10
+    dodge: 10
+    zuliumAttack: 10
+    zuliumDefense: 10
+    zuliumHeal: 10
+    resist: 10
+    energy: 10
+    luck: 10
+    intelligence: 10
+    baseATK: 10
+    currentATK: 10
+    baseDEF: 10
+    currentDEF: 10
+    skillGuageIsNeeded: 0
+    absorbCurrentAmount: 0
+    absorbMaxAmount: 0
+    currentAbsorbTime: 0
+    maxAbsorbTime: 0
+    currentQuol: 10
+    teamOrderNumber: 5
+    isFirstInTurnQueue: 0
+    currentXP: 50
+    requiredXP: 100
+    zuliumAttacks:
+    - {fileID: 114866090241895852, guid: a568cf9f9a46a4f449d296b087db853c, type: 3}
+    meleeAttacks:
+    - {fileID: 114726789762660326, guid: 68ea89a1ca154401bbf46dcb7a9a4988, type: 3}
+    skillAttacks: []
+    healMoves:
+    - {fileID: 114837194722328316, guid: d33edb374a152436eab295407cc14b88, type: 3}
+    allAttacks: []
+    switchMove: []
+    skillEffects: []
+  currentState: 0
+  progressBar: {fileID: 0}
+  gamePaused: 0
+  selector: {fileID: 1073660009442174, guid: 744f0253484584615b354fb84dafd0c4, type: 3}
+  enemyToAttack: {fileID: 0}
+  heroToHeal: {fileID: 0}
+  heroPanel: {fileID: 1702449161662394, guid: f48f6fff0b7424074950d2414d4c969a, type: 3}
+  energyBarSpacer: {fileID: 0}
+  gameEnergySlot: {fileID: 0}
+  camAnim: {fileID: 0}
+  basicHealingFX: {fileID: 1038571004307276, guid: 537f9984417294330a6ddafb7b537a06,
+    type: 3}
+  basicMeleeFX: {fileID: 1647964449546926, guid: 675ea77a34f5c4ec6983074c02686c8b,
+    type: 3}
+  battleTriggered: 0
+  absorbActive: 0
+  meleeDamageAbsorbed: 0
+  zuliumDamageAbsorbed: 0
+  originalPhysDefense: 0
+  originalSpeed: 0
+  studyIsActive: 0
+  turnsTaken: 0
+  lastAttackCritHit: 0
+  heroBattleSlotOne: {fileID: 0}
+  heroBattleSlotTwo: {fileID: 0}
+  heroBattleSlotThree: {fileID: 0}
+  heroBattleSlotFour: {fileID: 0}
+  heroBattleSlotFive: {fileID: 0}
+  HeroFullInventory: []
+  equippedPrimaryWeapon: {fileID: 0}
+  equippedArmor: {fileID: 0}
+  equippedAccessory: {fileID: 0}
+  teamInventoryManagement: {fileID: 0}
+  movesCompleted: 0
+  experienceCollected: 0
+--- !u!95 &95357634682650080
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376198335706632}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: b810f2280bb2a6b4cbf996716e6e3d55, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-221795321937257542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376198335706632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb819ec4f44342e2a414346f4d8847c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLvl: 0
+  currentXP: 0
+  requiredXP: 0
+  heroState:
+    isHero: 0
+    isEnemy: 0
+    theName: 
+    currentLevel: 0
+    baseHP: 0
+    currentHP: 0
+    baseZP: 0
+    currentZP: 0
+    baseEnergy: 0
+    currentEnergy: 0
+    speed: 0
+    physAttack: 0
+    physDefense: 0
+    dodge: 0
+    zuliumAttack: 0
+    zuliumDefense: 0
+    zuliumHeal: 0
+    resist: 0
+    energy: 0
+    luck: 0
+    intelligence: 0
+    baseATK: 0
+    currentATK: 0
+    baseDEF: 0
+    currentDEF: 0
+    skillGuageIsNeeded: 0
+    absorbCurrentAmount: 0
+    absorbMaxAmount: 0
+    currentAbsorbTime: 0
+    maxAbsorbTime: 0
+    currentQuol: 0
+    teamOrderNumber: 0
+    isFirstInTurnQueue: 0
+    currentXP: 0
+    requiredXP: 0
+    zuliumAttacks: []
+    meleeAttacks: []
+    skillAttacks: []
+    healMoves: []
+    allAttacks: []
+    switchMove: []
+    skillEffects: []
+  leveling: 0
