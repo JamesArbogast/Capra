@@ -2,14 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using CodeMonkey.Utils;
+using System;
 
-public class GridField
+public class GridField<TGridObject>
 {
+
+    public event EventHandler<OnGridObjectChangedEventArgs> OnGridObjectChanged;
+    public class OnGridObjectChangedEventArgs : EventArgs
+    {
+        public int x;
+        public int y;
+    }
     private int width;
     private int height;
     private float cellSize;
     private Vector3 originPosition;
-    private int[,] gridArray;
+    private TGridObject[,] gridArray;
     private TextMesh[,] debugTextArray;
 
     public GridField(int width, int height, float cellSize, Vector3 originPosition)
@@ -19,24 +27,33 @@ public class GridField
         this.cellSize = cellSize;
         this.originPosition = originPosition;
 
-        gridArray = new int[width, height];
-        debugTextArray = new TextMesh[width, height];
+        gridArray = new TGridObject[width, height];
+        bool showDebug = true;
 
         //creates battle grid
-        for(int x = 0; x < gridArray.GetLength(0); x++)
+        if(showDebug)
         {
-            for(int y = 0; y < gridArray.GetLength(1); y++)
+            TextMesh[,] debugTextArray = new TextMesh[width, height];
+
+            for(int x = 0; x < gridArray.GetLength(0); x++)
             {
-                debugTextArray[x,y] = UtilsClass.CreateWorldText(gridArray[x, y].ToString(), null, GetWorldPosition(x, y) + new Vector3(cellSize, cellSize) * .5f, 20, Color.white, TextAnchor.MiddleCenter);
-                Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x, y + 1), Color.white, 100f) ;
-                Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x + 1, y), Color.white, 100f);
-
+                for(int y = 0; y < gridArray.GetLength(1); y++)
+                {
+                    debugTextArray[x,y] = UtilsClass.CreateWorldText(gridArray[x, y].ToString(), null, GetWorldPosition(x, y) + new Vector3(cellSize, cellSize) * .5f, 20, Color.white, TextAnchor.MiddleCenter);
+                    Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x, y + 1), Color.white, 100f) ;
+                    Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x + 1, y), Color.white, 100f);
+                }
             }
+
+            Debug.DrawLine(GetWorldPosition(0, height), GetWorldPosition(width, height), Color.white, 100f);
+            Debug.DrawLine(GetWorldPosition(width, 0), GetWorldPosition(width, height), Color.white, 100f);
+
+            OnGridObjectChanged += (object sender, OnGridObjectChangedEventArgs eventArgs) =>
+            {
+                debugTextArray[eventArgs.x, eventArgs.y].text = gridArray[eventArgs.x, eventArgs.y].ToString();
+            };
+
         }
-
-        Debug.DrawLine(GetWorldPosition(0, height), GetWorldPosition(width, height), Color.white, 100f);
-        Debug.DrawLine(GetWorldPosition(width, 0), GetWorldPosition(width, height), Color.white, 100f);
-
         //Example of setting grid value
         //SetValue(2, 1, 56);
     }
@@ -55,7 +72,7 @@ public class GridField
     }
 
     //set grid value with xPos, yPos, and value entered into square
-    public void SetValue(int x, int y, int value)
+    public void SetValue(int x, int y, TGridObject value)
     {
         if (y >= 0 && y >= 0 && x < width && y < height)
         {
@@ -65,7 +82,7 @@ public class GridField
     }
 
     //set grid value by using world position (eg. click) and value entered into square
-    public void SetValue(Vector3 worldPosition, int value)
+    public void SetValue(Vector3 worldPosition, TGridObject value)
     {
         int x, y;
         GetXY(worldPosition, out x, out y);
@@ -73,7 +90,7 @@ public class GridField
     }
 
     //gets gridarray value (multidimensional array)
-    public int GetValue(int x, int y)
+    public TGridObject GetValue(int x, int y)
     {
         if (y >= 0 && y >= 0 && x < width && x < height)
         {
@@ -81,12 +98,12 @@ public class GridField
         } 
         else
         {
-            return 0;
+            return default(TGridObject);
         }
     }
 
     //returns gridarray value (multidimensional array)
-    public int GetValue(Vector3 worldPosition)
+    public TGridObject GetValue(Vector3 worldPosition)
     {
         int x, y;
         GetXY(worldPosition, out x, out y);

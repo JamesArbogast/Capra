@@ -4,10 +4,10 @@ using CodeMonkey.Utils;
 public class TestGrid : MonoBehaviour
 {
 
-    private GridField grid;
+    private GridField<bool> grid;
     void Start()
     {
-        grid = new GridField(22, 12, 10f, new Vector3(0, 0));
+        grid = new GridField<bool>(22, 12, 10f, new Vector3(0, 0));
     }
 
     // Update is called once per frame
@@ -16,7 +16,7 @@ public class TestGrid : MonoBehaviour
         //for clicking on grid to set value
         if(Input.GetMouseButtonDown(0))
         {
-            grid.SetValue(UtilsClass.GetMouseWorldPosition(), 1);
+            grid.SetValue(UtilsClass.GetMouseWorldPosition(), true);
         }
 
         if(Input.GetMouseButtonDown(1))
