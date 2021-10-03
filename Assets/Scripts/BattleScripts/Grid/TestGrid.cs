@@ -4,10 +4,13 @@ using CodeMonkey.Utils;
 public class TestGrid : MonoBehaviour
 {
 
+    [SerializeField] private HeatMapViz heatmapVisual;
     private GridField grid;
     void Start()
     {
         grid = new GridField(12, 12, 19f, new Vector3(0, 0));
+
+        heatmapVisual.SetGrid(grid);
     }
 
     // Update is called once per frame

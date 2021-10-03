@@ -61,18 +61,32 @@ public class GridField
     }
 
     //translates grid to world position
-    private Vector3 GetWorldPosition(int x, int y) 
+    public Vector3 GetWorldPosition(int x, int y) 
     {
         return new Vector3(x, y) * cellSize + originPosition;
     }
 
     //translates world position into grid position
-    private void GetXY(Vector3 worldPosition, out int x, out int y)
+    public void GetXY(Vector3 worldPosition, out int x, out int y)
     {
         x = Mathf.FloorToInt((worldPosition - originPosition).x / cellSize);
         y = Mathf.FloorToInt((worldPosition / cellSize - originPosition).y);
     }
 
+    public int GetWidth()
+    {
+        return width;
+    }
+
+    public int GetHeight()
+    {
+        return height;
+    }
+
+    public float CellSize()
+    {
+        return cellSize;
+    }
     //set grid value with xPos, yPos, and value entered into square
     public void SetValue(int x, int y, int value)
     {
