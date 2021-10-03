@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pathnode
 {
 
-    private GridField<Pathnode> grid;
+    private GridField grid;
     private int x;
     private int y;
 
@@ -17,7 +17,7 @@ public class Pathnode
     //node we came from previously
     public Pathnode cameFromNode;
 
-    public Pathnode(GridField<Pathnode> grid, int x, int y)
+    public Pathnode(GridField grid, int x, int y)
     {
         this.grid = grid;
         this.x = x;

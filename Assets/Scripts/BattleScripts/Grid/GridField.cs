@@ -4,9 +4,11 @@ using UnityEngine;
 using CodeMonkey.Utils;
 using System;
 
-public class GridField<TGridObject>
+public class GridField
 {
 
+    public const int HEAT_MAP_MAX_VALUE = 100;
+    public const int HEAT_MAP_MIN_VALUE = 0;
     public event EventHandler<OnGridObjectChangedEventArgs> OnGridObjectChanged;
     public class OnGridObjectChangedEventArgs : EventArgs
     {
@@ -17,7 +19,7 @@ public class GridField<TGridObject>
     private int height;
     private float cellSize;
     private Vector3 originPosition;
-    private TGridObject[,] gridArray;
+    private int[,] gridArray;
     private TextMesh[,] debugTextArray;
 
     public GridField(int width, int height, float cellSize, Vector3 originPosition)
@@ -27,7 +29,7 @@ public class GridField<TGridObject>
         this.cellSize = cellSize;
         this.originPosition = originPosition;
 
-        gridArray = new TGridObject[width, height];
+        gridArray = new int[width, height];
         bool showDebug = true;
 
         //creates battle grid
@@ -72,17 +74,18 @@ public class GridField<TGridObject>
     }
 
     //set grid value with xPos, yPos, and value entered into square
-    public void SetValue(int x, int y, TGridObject value)
+    public void SetValue(int x, int y, int value)
     {
         if (y >= 0 && y >= 0 && x < width && y < height)
         {
-            gridArray[x, y] = value;
-            debugTextArray[x, y].text = gridArray[x, y].ToString();
+            gridArray[x, y] = Mathf.Clamp(value, HEAT_MAP_MIN_VALUE, HEAT_MAP_MAX_VALUE);
+            if (OnGridObjectChanged != null) OnGridObjectChanged(this, new OnGridObjectChangedEventArgs { x = x, y = y });
+            //debugTextArray[x, y].text = gridArray[x, y].ToString();
         }
     }
 
     //set grid value by using world position (eg. click) and value entered into square
-    public void SetValue(Vector3 worldPosition, TGridObject value)
+    public void SetValue(Vector3 worldPosition, int value)
     {
         int x, y;
         GetXY(worldPosition, out x, out y);
@@ -90,7 +93,7 @@ public class GridField<TGridObject>
     }
 
     //gets gridarray value (multidimensional array)
-    public TGridObject GetValue(int x, int y)
+    public int GetValue(int x, int y)
     {
         if (y >= 0 && y >= 0 && x < width && x < height)
         {
@@ -98,12 +101,12 @@ public class GridField<TGridObject>
         } 
         else
         {
-            return default(TGridObject);
+            return default(int);
         }
     }
 
     //returns gridarray value (multidimensional array)
-    public TGridObject GetValue(Vector3 worldPosition)
+    public int GetValue(Vector3 worldPosition)
     {
         int x, y;
         GetXY(worldPosition, out x, out y);
